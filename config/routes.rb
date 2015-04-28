@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :listings do 
-		resources :orders 
+		resources :orders
 	end
 
   get 'pages/about'
