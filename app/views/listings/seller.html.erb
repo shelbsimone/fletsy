@@ -14,8 +14,9 @@
 		</tr> 
 		<% @listings.each do |listing| %> 
 		<tr> 
-			<td><%= image_tag listing.image.url(:thumb) %></td> 
-			<td><%= listing.name %></td> <td><%= listing.descrption %></td> 
+			<td><%= image_tag listing.image_url(:thumb) %></td> 
+			<td><%= listing.name %></td> 
+			<td><%= listing.descrption %></td> 
 			<td><%= number_to_currency(listing.price) %></td> 
 			<td> 
 				<div class="btn-group"> 
